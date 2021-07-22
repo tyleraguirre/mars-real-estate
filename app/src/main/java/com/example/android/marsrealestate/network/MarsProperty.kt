@@ -22,6 +22,7 @@ import com.squareup.moshi.Json
 import kotlinx.android.parcel.Parcelize
 
 
+//Adapating Json to Moshi to create Kotlin objects
 @Parcelize data class MarsProperty(
     val id: String,
     @Json (name = "img_src") val imgSrcUrl: String,

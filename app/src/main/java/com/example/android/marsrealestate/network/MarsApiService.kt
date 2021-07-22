@@ -33,6 +33,7 @@
 
  enum class MarsApiFilter(val value: String) {SHOW_RENT ("rent"), SHOW_BUY("buy"), SHOW_ALL("all")}
 
+ //Using Moshi Builder to create a Moshi object with the KotlinJsonAdapterFactory
  private val moshi = Moshi.Builder()
      .add(KotlinJsonAdapterFactory())
      .build()

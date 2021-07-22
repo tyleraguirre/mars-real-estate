@@ -41,6 +41,7 @@ fun bindRecyclerView(recyclerView: RecyclerView, data: List<MarsProperty>?) {
 fun bindImage(imgView: ImageView, imgUrl: String?) {
     imgUrl?.let {
         val imgUri = imgUrl.toUri().buildUpon().scheme("https").build()
+        //Loading a image with Glide
         Glide.with(imgView.context)
             .load(imgUri)
             .apply(RequestOptions()
